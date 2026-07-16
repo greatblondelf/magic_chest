@@ -1,0 +1,12 @@
+# Python packages for the Raspberry Pi hand tracker.
+#
+# These install as prebuilt aarch64 wheels on 64-bit Raspberry Pi OS
+# (Bookworm). They will NOT install on 32-bit Pi OS — mediapipe ships no
+# armv7l wheels. See README.md.
+#
+# Note: picamera2 (for the CSI Camera Module) is intentionally NOT here.
+# It ships as a system package and should be installed with apt, then made
+# visible via a --system-site-packages venv. setup.sh handles this.
+opencv-python>=4.9
+mediapipe>=0.10
+numpy>=1.24,<2
